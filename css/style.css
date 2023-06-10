@@ -17,13 +17,20 @@ select:focus {
 
 /* END OF RESET CSS & GLOBAL STYLES */
 
+
+
+
 .list-content {
     background-color: #C34DD6;
     height: 100vh;
     width: 65%;
+    overflow-y: auto;
 }
 
 .value-content {
+    position: fixed;
+    top: 0;
+    right: 0;
     display: flex;
     flex-direction: column;
     background: #F4F4F4;
@@ -98,16 +105,45 @@ select:focus {
     color: #C34DD6;
 }
 
+.list-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 40px 0 0 30px;
+}
+
 .list-content h2 {
     color: #fff;
     font-size: 38px;
     margin: 2rem 0 0 2rem;
 }
 
+
 .list-container .list {
     background: rgba(244, 244, 244, 0.58);
     box-shadow: 0px 4px 11px rgba(0, 0, 0, 0.25);
     border-radius: 9px;
-    padding: 5px;
+    padding: 8px 25px 8px 25px;
     font-size: 30px;
-} 
+    margin: 1rem;
+}
+
+.list:last-of-type {
+    color: #1CC900;
+    -webkit-text-stroke: 0.02rem #0E6700;
+}
+
+.list-container img {
+    width: 32px;
+    height: 32px;
+    margin-left: -10px;
+    transition: 0.1s all;
+}
+
+.list-container img:hover {
+    cursor: pointer;
+    transform: scale(110%);
+}
+
+
+
+
