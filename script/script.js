@@ -30,8 +30,16 @@ button.addEventListener("click", function () {
     let img = document.createElement("img");
     img.src = "./assets/delete.png";
     img.alt = "trash can button colored red, used to delete the current item";
-    
     div.appendChild(img);
+    img.addEventListener("click", deleteItem);
+   
 
     listContent.appendChild(div);
 })
+
+function deleteItem(event) {
+    let deleteButton = event.target;
+    let item = deleteButton.parentNode;
+ 
+    item.remove();
+}
