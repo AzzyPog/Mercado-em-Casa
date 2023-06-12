@@ -20,10 +20,16 @@
             </div>
             <input type="text" class="product-name-input" placeholder="nome do produto">
             <div>
-                <input type="text" class="product-quantity-input" placeholder="quantidade">
-                <input type="text" class="product-unit-input" placeholder="unidade">
+                <input type="text" class="small-input" placeholder="quantidade">
+                <select class="small-input" required>
+                    <option value="0" disabled selected>unidade</option>
+                    <option value="u">u</option>
+                    <option value="kg">kg</option>
+                    <option value="mg">mg</option>
+                    <option value="g">g</option>
+                </select>
             </div>
-            <input type="text" class="product-price-input" placeholder="preço por qntd.">
+            <input type="text" class="small-input" placeholder="preço por qntd.">
             <button type="submit" class="submit-button">Salvar</button>
         </section>
     </main>
