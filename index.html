@@ -11,7 +11,7 @@
 </head>
 <body>
     <main>
-        <section class="list-content">
+        <section class="list-content" id="listContent">
             <h2>
                 Carrinho
             </h2>
@@ -20,26 +20,33 @@
               <span class="list">kg</span>  
               <span class="list">cenoura</span>
               <span class="list">R$ 5,00</span>
-              <img src="./assets/delete.svg" alt="trash can button used to delete the current item">
+              <img src="./assets/delete.png" alt="trash can button used to delete the current item">
             </div>
+            <div class="list-container">
+                <span class="list">5</span>
+                <span class="list">kg</span>  
+                <span class="list">cenoura</span>
+                <span class="list">R$ 5,00</span>
+                <img src="./assets/delete.png" alt="trash can button used to delete the current item">
+              </div> 
         </section>
         <section class="value-content">
             <div class="icon">
                 <img src="/assets/grocery-cart.png" alt="icon-img"><h1>Mercado em Casa</h1>
             </div>
-            <input type="text" class="product-name-input" placeholder="nome do produto">
+            <input type="text" class="product-name-input" placeholder="nome do produto" id="productName">
             <div>
-                <input type="text" class="small-input" placeholder="quantidade">
-                <select class="small-input" required>
-                    <option value="0" disabled selected>unidade</option>
-                    <option value="u">u</option>
+                <input type="text" class="small-input" placeholder="quantidade" id="productQuantity">
+                <select class="small-input" required id="productUnit">
+                    <option value="null" disabled selected>unidade</option>
+                    <option value="uni">u</option>
                     <option value="kg">kg</option>
                     <option value="mg">mg</option>
                     <option value="g">g</option>
                 </select>
             </div>
-            <input type="text" class="small-input" placeholder="preço por qntd.">
-            <button type="submit" class="submit-button">Salvar</button>
+            <input type="text" class="small-input" placeholder="preço por qntd." id="productPrice">
+            <button type="submit" class="submit-button" id="saveButton">Salvar</button>
         </section>
     </main>
 </body>
