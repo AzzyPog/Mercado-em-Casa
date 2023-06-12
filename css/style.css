@@ -1,3 +1,6 @@
+
+/* START OF RESET CSS & GLOBAL STYLES */
+
 * {
     padding: 0;
     margin: 0;
@@ -11,6 +14,8 @@ main {
 select:focus {
     outline: none;
 }
+
+/* END OF RESET CSS & GLOBAL STYLES */
 
 .list-content {
     background-color: #C34DD6;
@@ -38,7 +43,7 @@ select:focus {
     width: 40px;
 }
 
-.icon span {
+.icon h1 {
     font-weight: 600;
     font-size: 18px;
     margin-left: 10px;
@@ -92,3 +97,17 @@ select:focus {
     background: #fff;
     color: #C34DD6;
 }
+
+.list-content h2 {
+    color: #fff;
+    font-size: 38px;
+    margin: 2rem 0 0 2rem;
+}
+
+.list-container .list {
+    background: rgba(244, 244, 244, 0.58);
+    box-shadow: 0px 4px 11px rgba(0, 0, 0, 0.25);
+    border-radius: 9px;
+    padding: 5px;
+    font-size: 30px;
+} 
